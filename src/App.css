@@ -1,0 +1,18 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+th,td{
+    border: 2px solid blue;
+    padding: 8px;
+}
+
+button{
+    cursor: grab;
+    margin: 5px;
+    padding: 5px 10px;
+}
