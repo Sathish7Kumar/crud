@@ -29,6 +29,9 @@ const User = () => {
   const handleCreate = () =>{
     nav('/form')
   }
+  const updateUser = (id) =>{
+    nav(`/editUser/${id}`)
+  }
   return (
     <>
       <h1>userDetails</h1>
@@ -53,7 +56,7 @@ const User = () => {
                 <td>{e.mobile_number}</td>
                 <td>
                   <button onClick={() => viewUser(e.id)}>View</button>
-                  <button>Update</button>
+                  <button onClick={() => updateUser(e.id)}>Update</button>
                   <button onClick={() => deleteUser(e.id)}>Delete</button>
                 </td>
               </tr>

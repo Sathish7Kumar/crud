@@ -4,6 +4,7 @@ import Home from "./CRUD/Home"
 import User from "./CRUD/User"
 import UserDetails from "./CRUD/UserDetails"
 import Form from "./CRUD/Form"
+import EditUser from "./CRUD/EditUser"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/user" element={<User/>} />
         <Route path="/form" element={<Form/>} />
         <Route path="/user/:id" element={<UserDetails/>} />
+        <Route path="/editUser/:id" element={<EditUser/>} />
       </Routes>
       </BrowserRouter>
     </>
